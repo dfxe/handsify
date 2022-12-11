@@ -74,6 +74,7 @@ html {
   margin: var(--default-html-and-body-margin);
   padding: var(--default-html-and-body-padding);
   background-image: url("/assets/images/ooorganize.svg");
+  overflow-x: hidden;
   /* height: var(--gb-height);
   background-size: var(--gb-background-size);
   background-position: var(--gb-background-position);
@@ -146,6 +147,8 @@ p {
 .section-title {
   color: black;
   font-weight: bold;
+  text-align: center;
+  padding-inline: 1ch;
 }
 .brand-logo {
   width: 2rem;
@@ -194,12 +197,13 @@ p {
   justify-content: center;
 }
 .description-section {
+  padding-inline: 1ch;
   text-align: center;
   color: #52525b;
   text-overflow: ellipsis;
 }
 .cta-description-section {
-  padding-inline: 10vw;
+  padding-inline: 1ch;
   text-align: center;
   color: #52525b;
   text-overflow: ellipsis;
@@ -216,6 +220,9 @@ p {
   justify-content: center;
   align-items: center;
   color: #52525b;
+}
+.description-parent {
+  padding-inline: 4rem;
 }
 #gallery-section {
   display: flex;
@@ -241,7 +248,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  bottom: 0;
+  margin-bottom: 5rem;
 }
 /*under 1024px*/
 @media screen and (max-width: 1024px) {
@@ -253,6 +260,10 @@ footer {
   }
   #cta-section {
     flex-direction: column;
+  }
+
+  section {
+    max-width: 100vw;
   }
 
   .main-gallery-image {
