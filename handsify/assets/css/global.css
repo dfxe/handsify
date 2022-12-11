@@ -103,13 +103,28 @@ button {
 }
 .cta-button {
   text-align: center;
-
+  border-radius: var(--border-radius);
   padding: 1rem;
 
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   background-color: var(--cta-background-color);
   color: black;
   text-decoration: none;
+}
+
+/* Define the animation for the images */
+@keyframes rotate-images {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the images */
+.rotating-images {
+  animation: rotate-images 70s ease-out infinite;
 }
 
 nav {
@@ -214,9 +229,8 @@ p {
   width: auto;
   height: 50vh;
 }
-#end-page-svg {
+.end-page-svg {
   position: absolute;
-
   z-index: -1;
 }
 footer {
