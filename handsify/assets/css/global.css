@@ -130,12 +130,20 @@ nav {
   width: 2rem;
   height: 2rem;
 }
+.hero-image {
+  object-fit: contain;
+  width: auto;
+  height: 50vh;
+}
 #the-mid {
   padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#the-mid > * {
+  margin-bottom: 5rem;
 }
 #hero-section {
   display: flex;
@@ -174,12 +182,16 @@ nav {
   width: 50%;
   height: auto;
 }
+#cta-section-image {
+  width: auto;
+  height: 50vh;
+}
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   bottom: 0;
-  width: 100%;
+  padding: 1rem;
   background-color: white;
 }
 /*under 1024px*/
@@ -187,8 +199,10 @@ footer {
   #main-gallery {
     flex-direction: column;
   }
+
   .main-gallery-image {
     width: auto;
     height: 40vh;
+    margin-bottom: 2rem;
   }
 }
