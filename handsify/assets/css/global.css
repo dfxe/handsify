@@ -103,6 +103,12 @@ nav {
 .brand-logo {
   cursor: pointer;
 }
+#the-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   position: absolute;
   display: flex;
