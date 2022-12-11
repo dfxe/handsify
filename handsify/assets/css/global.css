@@ -70,6 +70,7 @@
   font-family: "Syne Medium";
 }
 html {
+  overflow-x: hidden;
   margin: var(--default-html-and-body-margin);
   padding: var(--default-html-and-body-padding);
 
@@ -185,6 +186,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 100%;
 }
 #second-gallery {
   display: flex;
@@ -192,7 +194,6 @@ p {
   justify-content: center;
 }
 .description-section {
-  padding-inline: 20rem;
   text-align: center;
   color: #52525b;
 }
