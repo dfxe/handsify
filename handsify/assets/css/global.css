@@ -153,12 +153,24 @@ nav {
   text-align: center;
   color: #52525b;
 }
+#main-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 footer {
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   bottom: 0;
   width: 100%;
   background-color: white;
+}
+@media screen and (min-width: 1024px) {
+  #main-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
