@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Syne Bold";
+  src: url("../fonts/static/Syne-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Syne Medium";
+  src: url("../fonts/static/Syne-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
 :root {
   --default-html-and-body-margin: 0;
   --default-html-and-body-padding: 0;
@@ -57,10 +69,46 @@ html {
   background-repeat: var(--gb-background-repeat);
 }
 h1 {
+  font-family: "Syne Bold";
   font-size: var(--font-size-h1);
 }
 body {
+  margin: var(--default-html-and-body-margin);
+  padding: var(--default-html-and-body-padding);
+  font-family: "Syne Medium";
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.cta-button {
+  background-color: antiquewhite;
+}
+nav {
+  background-color: white;
+  opacity: 0.95;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+}
+.brand-logo {
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
 }
