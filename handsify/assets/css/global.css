@@ -158,6 +158,22 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
+#cta-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#cta-end-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-gallery-image {
+  object-fit: contain;
+  width: 50%;
+  height: auto;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -166,11 +182,13 @@ footer {
   width: 100%;
   background-color: white;
 }
-@media screen and (min-width: 1024px) {
+/*under 1024px*/
+@media screen and (max-width: 1024px) {
   #main-gallery {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  }
+  .main-gallery-image {
+    width: auto;
+    height: 40vh;
+  }
 }
