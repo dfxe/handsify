@@ -214,14 +214,17 @@ p {
   width: auto;
   height: 50vh;
 }
+#end-page-svg {
+  position: absolute;
+
+  z-index: -1;
+}
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   bottom: 0;
-  padding: 3rem;
-  background-color: white;
 }
 /*under 1024px*/
 @media screen and (max-width: 1024px) {
