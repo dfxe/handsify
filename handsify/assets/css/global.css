@@ -69,11 +69,11 @@
 * {
   font-family: "Syne Medium";
 }
+
 html {
-  overflow-x: hidden;
   margin: var(--default-html-and-body-margin);
   padding: var(--default-html-and-body-padding);
-
+  background-image: url("/assets/images/ooorganize.svg");
   /* height: var(--gb-height);
   background-size: var(--gb-background-size);
   background-position: var(--gb-background-position);
@@ -196,11 +196,13 @@ p {
 .description-section {
   text-align: center;
   color: #52525b;
+  text-overflow: ellipsis;
 }
 .cta-description-section {
   padding-inline: 10vw;
   text-align: center;
   color: #52525b;
+  text-overflow: ellipsis;
 }
 #cta-section {
   display: flex;
