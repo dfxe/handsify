@@ -94,6 +94,7 @@ header {
 button {
   cursor: pointer;
 }
+
 #brand-logo-div {
   display: flex;
   flex-direction: row;
@@ -107,13 +108,16 @@ button {
   text-align: center;
   border-radius: var(--border-radius);
   padding: 1rem;
-
+  font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   background-color: var(--cta-background-color);
   color: black;
   text-decoration: none;
+  transition: transform 300ms;
 }
-
+.cta-button:hover {
+  transform: var(--transition-button-hover);
+}
 /* Define the animation for the images */
 @keyframes rotate-images {
   from {
