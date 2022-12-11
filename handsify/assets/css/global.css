@@ -144,7 +144,7 @@ p {
   align-items: center;
 }
 #the-mid > * {
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 #hero-section {
   display: flex;
@@ -169,6 +169,11 @@ p {
 }
 .description-section {
   padding-inline: 20rem;
+  text-align: center;
+  color: #52525b;
+}
+.cta-description-section {
+  padding-inline: 10vw;
   text-align: center;
   color: #52525b;
 }
