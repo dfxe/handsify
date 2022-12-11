@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="author" content="dfxe" />
     <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="icon" href="/assets/images/brand-logo.svg" />
     <title>Home</title>
   </head>
   <body>
     <header>
       <nav>
-        <img
-          src="brand-logo.webp"
-          alt="brand logo"
-          loading="eager"
-          class="brand-logo"
-        />
+        <div id="brand-logo-div">
+          <img
+            src="/assets/images/brand-logo.svg"
+            alt="brand logo"
+            loading="eager"
+            class="brand-logo"
+          />
+          <p id="brand-logo-title">handsify</p>
+        </div>
         <a
           href="https://blahumi.gumroad.com/l/cfxvg"
           link="norefferer noopener"
@@ -24,11 +28,28 @@
           >Get Hands</a
         >
       </nav>
-      <h1 className="text-white">Handsify</h1>
     </header>
     <div id="the-mid">
-      <section id="hero-section"><p>Short description</p></section>
-      <section id="gallery-section"><p>Short description</p></section>
+      <section id="hero-section">
+        <img
+          src="/assets/images/icv.webp"
+          alt="hero image"
+          loading="eager"
+          width="300px"
+          height="350px"
+        />
+        <h1 id="hero-section-title">handsify</h1>
+        <p id="hero-section-subtitle">
+          Make a strong impression by showcasing your app or website on these 3D
+          models.
+        </p>
+      </section>
+      <section id="gallery-section">
+        <p>
+          Perfect for highlighting the convenience and accessibility of your
+          site or app on the go, and for showcasing its mobile-friendly design.
+        </p>
+      </section>
       <section id="cta-section"><p>Short description</p></section>
     </div>
     <footer>
@@ -38,7 +59,13 @@
         loading="eager"
         class="brand-logo"
       />
-      <button class="cta-button">Get Hands</button>
+      <a
+        href="https://blahumi.gumroad.com/l/cfxvg"
+        link="norefferer noopener"
+        target="_blank"
+        class="cta-button"
+        >Get Hands</a
+      >
     </footer>
   </body>
 </html>

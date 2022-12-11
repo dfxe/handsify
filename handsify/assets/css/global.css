@@ -1,4 +1,10 @@
 @font-face {
+  font-family: "Syne Extra Bold";
+  src: url("../fonts/static/Syne-ExtraBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: "Syne Bold";
   src: url("../fonts/static/Syne-Bold.ttf");
   font-weight: bold;
@@ -13,7 +19,7 @@
 :root {
   --default-html-and-body-margin: 0;
   --default-html-and-body-padding: 0;
-  --font-size-h1: 6ch;
+  --font-size-h1: 3rem;
   --first-font-size: medium;
   --font-size-content: large;
 
@@ -58,24 +64,26 @@
     rgba(238, 58, 136, 1) 11.2%,
     rgba(128, 162, 245, 1) 91.1%
   );
+  --cta-background-color: #fcd34d;
+}
+* {
+  font-family: "Syne Medium";
 }
 html {
   margin: var(--default-html-and-body-margin);
   padding: var(--default-html-and-body-padding);
-  height: var(--gb-height);
+
+  /* height: var(--gb-height);
   background-size: var(--gb-background-size);
   background-position: var(--gb-background-position);
   background: var(--background-image);
-  background-repeat: var(--gb-background-repeat);
+  background-repeat: var(--gb-background-repeat); */
 }
-h1 {
-  font-family: "Syne Bold";
-  font-size: var(--font-size-h1);
-}
+
 body {
   margin: var(--default-html-and-body-margin);
   padding: var(--default-html-and-body-padding);
-  font-family: "Syne Medium";
+
   display: flex;
   flex-direction: column;
 }
@@ -87,8 +95,26 @@ header {
 button {
   cursor: pointer;
 }
+#brand-logo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#brand-logo-title {
+  font-family: "Syne Extra Bold";
+}
 .cta-button {
-  background-color: antiquewhite;
+  text-align: center;
+  padding: 1rem;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: var(--cta-background-color);
+  color: black;
+  text-decoration: none;
+}
+.cta-button:hover {
+  text-decoration: wavy;
 }
 nav {
   background-color: white;
@@ -101,13 +127,31 @@ nav {
   width: 100%;
 }
 .brand-logo {
-  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
 }
 #the-mid {
+  padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30ch;
+}
+#hero-section-title {
+  font-family: "Syne Extra Bold";
+  font-size: var(--font-size-h1);
+  text-align: center;
+}
+#hero-section-subtitle {
+  text-align: center;
+  color: #52525b;
 }
 footer {
   position: absolute;
